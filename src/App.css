@@ -1,38 +1,12 @@
-.App {
-  text-align: center;
+:root{
+  --blackColor: #555454;
+  --textFamily:'Raleway', sans-serif;
+  --purpleColor:#8456EC ;
+  --deepPurple:#240D57;
+  --primaryColor: #f3b10a;
+  --backgroundColor: linear-gradient(180deg, rgba(247, 68, 208, 0.856), rgb(233, 213, 37));
+  --mainBackground: rgb(238, 237, 237) url("https://res.cloudinary.com/hayteetech/image/upload/v1653151782/Joyagunbiade.com/backgroundstripe_wifbou.png");
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  background: linear-gradient(0deg, #F6F2FF, #F6F2FF), #FBFAFF;
 }
