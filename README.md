@@ -10,7 +10,7 @@
 once the project is successfully cloned, It automatic open the project folder in your directory.
 
 1. run "cd temitopefrontendtask"
-2. run "npm install" : This install all depency used in the project
+2. run "npm install" : This install all dependency used in the project
 3. run "npm start" : This command open the application in your browser
 
 ## Live url of the project
