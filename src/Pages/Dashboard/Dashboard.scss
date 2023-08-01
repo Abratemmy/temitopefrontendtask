@@ -1,0 +1,307 @@
+.DashboardPage{
+    position: relative;
+    width: 100%;
+    .firstRow{
+        .top{
+            .image{
+                width: 32px;
+                height: 32px;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .image1{
+                background: #5570F11F;
+            }
+            .image2{
+                background: #FFCC9129;
+            }
+            .image3{
+                background: #FFCC9129;
+            }
+        }
+        .contentWrapper{
+            margin: 30px 0px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .content{
+                flex: 1;
+                .name{
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: var(--grayColor)  
+                }
+                .text{
+                    font-family: var(--textFamily);
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: var(--blackColor);
+                    span{
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 15px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #519C66;
+                    }
+                }
+            }
+        }
+    }
+    .otherContent{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        margin: 30px 0px;
+       
+        .firstPart{
+            .card1, .card2{
+                height: 278px;
+                width: 100%;
+            }
+            .card1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .top{
+                    width: 100%;
+                }
+            }
+        }
+        .allProducts{
+            background: var(--primaryColor);
+            .image{
+                background: #6a81f3;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                z-index: 10;
+            }
+            .contentWrapper{
+                font-family: Inter;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 20px;
+                .content{
+                    flex:1;
+                }
+                .name{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color:#fff;
+                }
+                .text{
+                    font-family: Poppins;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color:#fff;
+                    span{
+                        font-family: Inter;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 15px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color:#dbdeee
+                    }
+                }
+            }
+        }
+        .abandoneCard{
+            margin-top: 20px;
+            .contentWrapper{
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .content{
+                    flex:1;
+                    .name{
+                       //styleName: Paragraph 2/Regular;
+                        font-family: Inter;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 17px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: var(--grayColor); 
+                    }
+                    .red{
+                        color: var(--redColor)
+                    }
+                    .text{
+                        font-family: Poppins;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: var(--blackColor);
+                        padding-top: 6px;
+                        span{
+                            //styleName: Label 1/Regular;
+                            font-family: Inter;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 15px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #519c66;
+                        }
+                    }
+                }
+            }
+        }
+        .barChartSession{
+            .pageCard{
+                width: 100%;
+                .top{
+                    padding-bottom: 15px;
+                    .left{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        .title{
+                            //styleName: Paragraph 1/Medium;
+                            font-family: Inter;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 19px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: var(--blackColor)
+                        }
+                        .dropdownComponent{
+                            .header{
+                                text-transform: capitalize;
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                background: #5570F114;
+                                font-family: Inter;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 17px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                border-radius: 7px;
+                                padding: 3px 6px;
+                                cursor: pointer;
+                                color: var(--primaryColor)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .recentOrder{
+        .title{
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: var(--blackColor)
+        }
+        .contentWrapper{
+            padding: 15px 0px;
+        }
+        .content{
+            padding: 5px 0px;
+            display: flex;
+            border-bottom: 1px solid #F1F3F9;
+            align-items: center;
+            justify-content: space-between;
+            .left{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                .image{
+                    width: 47px;
+                    height: 47px;
+                    border-radius: 8px;
+                    border: 1px solid #F1F3F9;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .product{
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: var(--blackColor);
+                    .price{
+                        color: #33343A;
+                        padding-top: 5px;
+                    }
+                }
+            }
+            .right{
+                .date{
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 15px;
+                    letter-spacing: 0em;
+                    text-align: right;
+                    color: #A6A8B1
+                }
+                .status{
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 15px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    margin-top: 5px;
+                    .completed{
+                        color: #519C66;
+                        background: #32936F1F;
+                        padding: 3px 15px;
+                        border-radius: 8px;
+                    }
+                    .pending{
+                        background: #F57E771F;
+                        color: #CC5F5F;
+                        padding: 3px 15px;
+                        border-radius: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .otherContent{
+            height: auto
+        }
+        
+    }
+}

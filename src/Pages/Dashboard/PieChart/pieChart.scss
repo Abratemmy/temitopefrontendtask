@@ -1,0 +1,52 @@
+.pieContainer{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    background:#EEF0FA ;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: auto;
+    margin-top: 20px;
+}
+.pieWrapper{
+    width: 100%;
+    .pieLabel{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        .content{
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            width: 100%;
+            .dot{
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+            }
+            .dot1{
+                background: var(--primaryColor);
+            }
+            .dot2{
+                background: #97A5EB;
+            }
+            .dot3{
+                background: #FFCC91;
+            }
+            .name{
+                //styleName: Label 2/Regular;
+                font-family: Inter;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 13px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #A6A8B1;
+            }
+        }
+    }
+}

@@ -1,0 +1,542 @@
+.Conversations{
+    width: 100%;
+    .topWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        .text{
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: var(--textFamily) 
+        }
+        button{
+            border: none;
+            background: var(--primaryColor);
+            border-radius: 8px;
+            color: #fff;
+            width: 161px;
+            height: 36px;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: center;
+            transition: 0.4s all ease;
+            
+        }
+        button:hover{
+            background: #7584cf;
+        }
+    }
+    .contentWrapper{
+        display: flex;
+        width: 100%;
+        gap: 15px;
+        .contactsContainer{
+            flex:1;
+            .pageCard{
+                padding: 0px;
+                .top{
+                    padding: 10px;
+                    .title{
+                        font-family: Poppins;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color:#2C2D33;
+                    }
+                    .number{
+                        font-family: Poppins;
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        letter-spacing: 0em;
+                        text-align: right;
+                        color: #A6A8B1
+                    }
+                }
+                .searchInput{
+                    margin: 3px 10px;
+                    border: 1px solid #CFD3D4;
+                    border-radius: 8px;
+                    display: flex;
+                    height: 45px;
+                    gap: 12px;
+                    justify-content: flex-start;
+                    padding: 0px 10px;
+                    align-items: center;
+                    img{
+                        position: relative;
+                        top:-2px;
+                        width: 18px;height: 18px
+                    }
+                    input, input::placeholder{
+                        outline: none;
+                        border: none;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: #ABAFB1;
+                    }
+                }
+            }
+            
+            .contact{
+                margin: 15px 0px;
+                height: 70vh;
+                overflow-y: scroll;
+                .content{
+                    border-bottom: 1px solid #F1F3F9;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    padding: 3px 10px;
+                    cursor: pointer;
+                    transition: 0.4s all ease;
+                    background: #fff;
+                    border-right: 4px solid #fff;
+                    .detail{
+                        .name{
+                            font-family: Inter;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 19px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: var(--blackColor);
+                            padding-bottom: 7px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .new{
+                                background:  #FEF5EA;                                ;
+                                font-size: 12px;
+                                border-radius: 8px;
+                                width: 40px;
+                                height: 19px;
+                                text-align: center;
+                                padding: 3px 6px;
+                            }
+                        }
+                        .text{
+                            display: flex;
+                            gap: 5px;
+                            width: 100%!important;
+                            overflow: hidden;
+                            font-family: Inter;
+                            font-size: 13px;
+                            font-weight: 400;
+                            line-height: 17px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color: #8B8D97;
+                           .message{
+                            width: 180px!important;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                           }
+                        }
+                    }
+                }
+                .activeContent{
+                    border-right: 4px solid #5570F1;
+                    background: linear-gradient(0deg, #F7F7FC, #F7F7FC);
+
+                }
+                .content:hover{
+                    opacity:0.74;
+                    background: #d4d3d3a2;
+                    border-right: 4px solid #5570F1;
+                }
+
+                
+            }
+            .contact::-webkit-scrollbar{
+                width: 0px!important; 
+            }
+            .contact::-webkit-scrollbar-thumb:vertical {
+              border-radius: 10px;
+              /* // -webkit-box-shadow: inset 0 0 5px #b3afaf; */
+              background: var(--primaryColor);
+            }
+            .contact::-webkit-scrollbar-track:vertical {
+              -webkit-box-shadow: inset 0 0 5px #c7c6c6;
+              border-radius: 10px;
+            }
+            .contact::-webkit-scrollbar-thumb:vertical:hover {
+              background: var(--secondaryColor);
+            }
+        }
+        .conversationDetails{
+            flex:3;
+            .pageCard{
+                padding:0;
+                min-height: 400px;
+                position: relative;
+                .detailWrapper{
+                    position: relative;
+                    .top{
+                        padding: 10px;
+                        border-bottom: 1px solid #F1F3F9;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .left{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            .image{
+                                width: 60px;
+                                height: 60px;
+                                border-radius: 8px;
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 8px;
+                                    object-fit: cover;
+                                }
+                            }
+                            .name{
+                                font-family: Inter;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 19px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color: var(--blackColor);
+                                .status{
+                                    display: flex;
+                                    gap: 10px;
+                                    align-items: center;
+                                    padding-top: 10px;
+                                    font-family: Inter;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 17px;
+                                    letter-spacing: 0em;
+                                    text-align: right;
+                                    color: #8B8D97;
+                                    .online, .offline{
+                                        font-family: Inter;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 17px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color:#b6bfeb
+                                    }
+                                    .online span{
+                                        width: 8px;
+                                        height: 8px;
+                                        border-radius: 50%;
+                                        background: var(--primaryColor);
+                                        display: inline-block;
+                                        margin-right: 7px;
+                                    }
+                                    .offline span{
+                                        width: 8px;
+                                        height: 8px;
+                                        border-radius: 50%;
+                                        background: rgb(201, 200, 200);
+                                        display: inline-block;
+                                        margin-right: 7px;
+                                    }
+                                }
+                            }
+                        }
+                        .right{
+                            .first, .second{
+                                display: flex;
+                                gap: 10px;
+                                justify-content: flex-end;
+                            }
+                            .first{
+                                padding-bottom: 10px;
+                                .customer{
+                                    background: #FEF5EA;
+                                    border-radius: 8px;
+                                    padding: 1px 10px;
+                                    text-align: center;
+                                    font-family: Inter;
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                    line-height: 15px;
+                                    letter-spacing: 0em;
+                                    text-align: right;
+                                    color: #1c1D22;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    cursor: pointer;
+                                }
+                                .viewProfile{
+                                    font-family: Inter;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 17px;
+                                    letter-spacing: 0em;
+                                    text-align: right;
+                                    color: #5570F1;
+                                    cursor: pointer;
+                                    transition: 0.4s all ease;
+                                }
+                                .viewProfile:hover{
+                                    color: #99a7ee
+                                }
+                            }
+                            .second{
+                                .order{
+                                    //styleName: Paragraph 2/Regular;
+                                    font-family: Inter;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 17px;
+                                    letter-spacing: 0em;
+                                    text-align: left;
+                                    color: #a6a8b1;
+                                    position: relative;
+                                    top: 2px
+                                }
+                            }
+                        }
+                    }
+                    .content{
+                        // height: 70vh;
+                        // overflow-y: auto;
+                        padding: 20px 10px;
+                        .maindate{
+                            text-align: center;
+                            background: #F4F5FA;
+                            padding: 7px 15px;
+                            width: fit-content;
+                            margin: auto;
+                            font-family: Inter;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 17px;
+                            letter-spacing: 0em;
+                            text-align: right;
+                            color:#1c1D22;
+                            margin-bottom: 20px;
+                            border-radius: 5px;
+                        }
+                        .message{
+                            font-family: Inter;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            letter-spacing: 0em;
+                            text-align: left;
+                            color:#fff;
+                        }
+                        .message1{
+                            background: var(--primaryColor);
+                            max-width: 318px;
+                            padding: 10px; 
+                            border-radius: 16px;
+                            border-bottom-left-radius: 0px;
+                        }
+                        .leftMessage{
+                            text-align: left;
+                            display: flex;
+                            justify-content: flex-start;
+                            flex-direction: column;
+                            padding-bottom: 10px;
+                            .date{
+                                text-align: left;
+                                //styleName: Paragraph 1/Regular;
+                                font-family: Inter;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 19px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color:#8B8D97;
+                            }
+                        }
+                        .rightMessage{
+                            text-align: right;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: flex-end;
+                            flex-direction: column;
+                            padding-bottom: 10px;
+                            width: 100%;
+                            .message2{
+                                background:#FFEAD1 ;
+                                color: #1C1D22;
+                                width: 318px;
+                                padding: 10px; 
+                                border-radius: 16px;
+                                border-bottom-right-radius: 0px;
+                            }
+                            .date{
+                                font-family: Inter;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 19px;
+                                letter-spacing: 0em;
+                                text-align: right;
+                                color:#8B8D97;
+                                padding: 5px 0px;
+                                span{
+                                    background: #FFEAD1;
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 50%;
+                                    // display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    .icon{
+                                        color: #1C1D22;
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .picker-container{
+                            width: 100%;
+                            position: relative;
+                            border: 1px solid #E1E2E9;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 8px;
+                            .inputsession{
+                                position: relative;
+                                display: flex;
+                                width: 100%;
+                                align-items: center;
+                                justify-content: center;
+                                .input-style{
+                                    width: 75%;
+                                    outline: none;
+                                    border: none;
+                                    padding: 0px 10px;
+                                }
+                                .plus{
+                                    background: #FFF2E2;
+                                    height: 32px;
+                                    width: 32px;
+                                    border-radius: 8px;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+                                .send{
+                                    display: flex;
+                                    gap: 10px;
+                                    margin: 5px 0px;
+                                    img{
+                                        cursor: pointer;
+                                    }
+                                    button{
+                                        border: none;
+                                        background: #FFF2E2;
+                                        //styleName: Paragraph 1/Regular;
+                                        font-family: Inter;
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        line-height: 19px;
+                                        letter-spacing: 0em;
+                                        text-align: left;
+                                        color: #1C1D22;
+                                        padding: 3px 7px
+                                    }
+                                }
+                                .showPicker{
+                                    position: absolute;
+                                    bottom: 30px;
+                                    right: 0px
+                                }
+                            }
+                        }
+                    }
+                }
+                .startConversation{
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 20px
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .contentWrapper{
+            flex-direction: column;
+            .contactsContainer{
+                .contact{
+                    .content{
+                        .detail{
+                            .text{
+                                .message{
+                                    width: 100%!important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.popupContainer{
+    .closeImg{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+        font-weight: 600;
+        color: crimson;
+        font-size: 25px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+    .image{
+        width: 200px;
+        height: 200px;
+        border: 4px solid var(--primaryColor);
+        border-radius: 50%;
+        text-align: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .camera{
+            position: absolute;
+            bottom: 20px;
+            right: 0px;
+            .icon{
+                color:#fff;
+                font-size: 20px;
+            }
+        }
+    }
+}
